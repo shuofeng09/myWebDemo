@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>products-details</title>
+    <!--======== Font stylesheet ========-->
+    <link rel="stylesheet" href="./CSS/font.css">
+    <!--======== Nav stylesheet ========-->
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <!--======== Content stylesheet =======-->
+    <link rel="stylesheet" href="./CSS/product/products-content.css">
+    <!--======== Footer stylesheet =======-->
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <style>
+        body {
+            font-family: 'Poppins', 'Hind Siliguri', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<!--======== NavBar-Page-Start =======-->
+<header id="header">
+    <div class="container">
+        <div class="header-left">
+            <a class="block header-img"></a>
+        </div>
+        <div class="header-right">
+            <div class="header-right-box-left">
+                <nav>
+                    <ul class="header-nav-ul">
+                        <li class="nav-li"><a href="index.html" class="nav-font">首页</a></li>
+                        <li class="nav-li"><a href="about.html" class="nav-font">关于我们</a></li>
+                        <li class="nav-li"><a href="product.html" class="nav-font">在线靶场</a></li>
+                        <li class="nav-li"><a href="news.html" class="nav-font">最新动态</a></li>
+                        <li class="nav-li"><a href="suggestions.html" class="nav-font">意见反馈</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right-box-right">
+                <nav>
+                    <a href="" class="nav-register nav-font">Sign Up</a>
+                    <a href="" id="nav-login-font" class="nav-login">Sign In</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section style="background: #3056d3;height: 50vh;display: flex;justify-content: center;
+                            align-items: center;font-size: 60px;color: #ffffff;">
+    <h1>靶场详情</h1>
+</section>
+<!--======== Content-Page-home =======-->
+<section>
+    <div class="main-container">
+        <div class="content-title">
+            <a href="index.html" class="brand">首页</a>
+            <span class="brand">></span>
+            <a href="news.html" class="brand">在线靶场</a>
+            <span class="brand">></span>
+            <a href="" class="brand">Apache log4J漏洞（CVE-2021-44228）</a>
+        </div>
+        <div class="detail-top">
+            <div><img src="./image/product/logj.jpg" alt="image" width="304" height="193"></div>
+            <div class="detail-top-container" style="margin-left: 30px">
+                <h1>Apache log4J漏洞（CVE-2021-44228）</h1>
+                <div class="one">
+                    <div>
+                        <p><span>难易程度 : </span>2⭐</p>
+                        <p><span>增加能力 : 1play</span> (完成可获得能力值)</p>
+                    </div>
+                    <div>
+                        <p><span>分类 : </span>中级靶场</p>
+                        <p>
+                            <span>标签 : </span>
+                            <span class="code">log4j</span>
+                            <span class="code">零日漏洞</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <a class="button" href="">启动靶场环境</a>
+                    靶场有<span class="tips">129</span>人完成/<span class="tips">12</span>人放弃
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="tab-list">
+                <p style="color: #3056d3">靶场介绍</p>
+                <p>解题思路</p>
+                <p>防御方案</p>
+            </div>
+            <div class="tab-content">
+                <!--背景介绍-->
+                <h2 class="followTitle">
+                    背景介绍
+                </h2>
+                <p>
+                    Apache Log4j2是一款优秀的Java日志框架。2021年11月24日，阿里云安全团队向Apache官方报告了Apache Log4j2远程代码执行漏洞。由于Apache Log4j2某些功能存在递归解析功能，攻击者可直接构造恶意请求，触发远程代码执行漏洞。漏洞利用无需特殊配置，
+                    经验证，Apache Struts2、Apache Solr、Apache Druid、Apache Flink等均受影响。
+                </p>
+                <h2 class="followTitle">
+                    实训目标
+                </h2>
+                <p>1、了解日Log4j2日志框架；<br/>2、掌握分析JNDI的使用方法；</p>
+                <h2 class="followTitle">
+                    解题方向
+                </h2>
+                <p>测试POC: <br>payload: ${jndi:idap://[这里填写在上面提到的dns platform 中获取到的dns域名]}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--======== Footer-Page-Start =======-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-top-box">
+            <h1 class="footer-about-h1">Contact Us</h1>
+            <ul class="footer-top-ul">
+                <li>Phone：0591-66666999</li>
+                <li>E-mail：diaoyukuailai@gmail.hk</li>
+                <li>Address：FuJian FuzhouLianJianxian FUJIAN BUSINESS UNIVERSITY</li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer-wechat-image">
+                <img width="120" height="120" src="./image/wechat.png" alt="image">
+            </div>
+            <div class="footer-wechat-font">
+                <h3>Scan WeChat</h3>
+                <h3>Follow us</h3>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-container">
+        <div class="footer-bottom-ul-left">
+            <ul>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">legal notice</a></li>
+                <li><a href="#">terms of service</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom-ul-right">
+            <ul>
+                <li>Designed and Developed by</li>
+                <li><a href="#">Heweijie</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-container">
+        <div class="footer-footnote">
+            <p>2022 ©朔风 - 闽ICP备2022007194号</p>
+        </div>
+    </div>
+</footer>
+</body>
+<!--========  Nav JavaScript ========-->
+<script src="./JS/nav-transform.js"></script>
+</html>

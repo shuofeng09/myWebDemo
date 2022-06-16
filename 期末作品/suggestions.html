@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suggestions</title>
+    <!--======== Font stylesheet ========-->
+    <link rel="stylesheet" href="./CSS/font.css">
+    <!--======== Nav stylesheet ========-->
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <!--======== Context stylesheet ========-->
+    <link rel="stylesheet" href="./CSS/suggestion/context.css">
+    <!--======== Footer stylesheet =======-->
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <!--======== jQuery CDN ==========-->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', 'Hind Siliguri', sans-serif;
+            height: 200vh;
+        }
+    </style>
+</head>
+<body>
+<!--======== NavBar Page-Start =======-->
+<header id="header">
+    <div class="container">
+        <div class="header-left">
+            <a class="block header-img">
+            </a>
+        </div>
+        <div class="header-right">
+            <div class="header-right-box-left">
+                <nav>
+                    <ul class="header-nav-ul">
+                        <li class="nav-li"><a href="index.html" class="nav-font">首页</a></li>
+                        <li class="nav-li"><a href="about.html" class="nav-font">关于我们</a></li>
+                        <li class="nav-li"><a href="product.html" class="nav-font">在线靶场</a></li>
+                        <li class="nav-li"><a href="news.html" class="nav-font">最新动态</a></li>
+                        <li class="nav-li"><a href="suggestions.html" class="nav-font">意见反馈</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right-box-right">
+                <nav>
+                    <a href="" class="nav-register nav-font">Sign Up</a>
+                    <a href="" id="nav-login-font" class="nav-login">Sign In</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!--======== Header background =======-->
+<div class="header-bg">
+    <h1>意见反馈</h1>
+</div>
+<div class="content-main">
+    <div class="content-main-container">
+        <div class="content-main-textarea">
+            <div>
+                <p class="msg-p">CONTACT US</p>
+                <h2 class="msg-h2">Let's talk about</h2>
+                <h2 class="msg-h2">Love to hear from you!</h2>
+            </div>
+            <div class="content-form-box">
+                <h2>给我们留言</h2>
+                <form action="#">
+                    <div class="form-list-box ">
+                        <label for="name">名字</label>
+                        <input id="name" type="text" placeholder="Jax">
+                    </div>
+                    <div class="form-list-box">
+                        <label>性别</label>
+                        <div id="sex" class="input-style">
+                            <span>男</span>
+                            <input type="radio" name="sex" value="0" checked>
+                            <span>女</span>
+                            <input type="radio" name="sex" value="1">
+                        </div>
+                    </div>
+                    <div class="form-list-box">
+                        <label>兴趣</label>
+                        <div id="hobby" class="input-style">
+                            <span>篮球</span>
+                            <input type="checkbox" value="0">
+                            <span>足球</span>
+                            <input type="checkbox" value="1">
+                            <span>排球</span>
+                            <input type="checkbox" value="2">
+                        </div>
+                    </div>
+                    <div class="form-list-box">
+                        <label for="select">学历</label>
+                        <div class="input-style">
+                            <select id="select">
+                                <option value="">本科</option>
+                                <option value="">专科</option>
+                                <option value="">高中</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-list-box">
+                        <label for="textarea">意见建议</label>
+                        <textarea id="textarea"></textarea>
+                    </div>
+                    <div class="button">
+                        <input id="submit" name="submit" type="submit" value="提交">
+                        <input id="reset" name="reset" type="reset" value="重置">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--======== Footer-Page-Start =======-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-top-box">
+            <h1 class="footer-about-h1">Contact Us</h1>
+            <ul class="footer-top-ul">
+                <li>Phone：0591-66666999</li>
+                <li>E-mail：diaoyukuailai@gmail.hk</li>
+                <li>Address：FUJIAN BUSINESS UNIVERSITY</li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer-wechat-image">
+                <img width="120" height="120" src="./image/wechat.png" alt="image">
+            </div>
+            <div class="footer-wechat-font">
+                <h3>Scan WeChat</h3>
+                <h3>Follow us</h3>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-container">
+        <div class="footer-bottom-ul-left">
+            <ul>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">legal notice</a></li>
+                <li><a href="#">terms of service</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom-ul-right">
+            <ul>
+                <li>Designed and Developed by</li>
+                <li><a href="https://denice.fun">HeWeiJie</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-container">
+        <div class="footer-footnote">
+            <p>2022 ©朔风 - 闽ICP备2022007194号</p>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="./JS/nav-transform.js"></script>
+<script>
+    $(function () {
+        $('#submit').click(function () {
+            if ($('#name').val() === '') {
+                alert('姓名不允许为空')
+                return false;
+            } else if ($('#textarea').val() === '') {
+                alert('请输入您的意见建议');
+                return false;
+            } else {
+                alert('提交成功');
+                return true;
+            }
+        })
+    });
+</script>
+</html>

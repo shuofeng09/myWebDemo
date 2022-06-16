@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header-bg {
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    max-height: 80vh;
+    background: #5a98de;
+    background: url("../../image/moon.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-origin: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bg h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.content-main{
+    padding-bottom: 40px;
+    background: #f8f9ff;
+}
+
+.content-main-container {
+    max-width: 1100px;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 120px 0 0;
+
+}
+.content-main-textarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-form-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 8px 6px  #f1f4fe;
+}
+
+.content-form-box label {
+    display: block;
+}
+
+.form-list-box {
+    margin-bottom: 20px;
+}
+#name {
+    /* 去除input样式 */
+    border: none;
+    outline: none;
+    max-width: 280px;
+    width: 280px;
+    max-height: 24px;
+    height: 24px;
+    padding: 15px 0;
+    font-size: 16px;
+    transition: 0.2s;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.input-style {
+    max-width: 280px;
+    width: 280px;
+    max-height: 24px;
+    height: 24px;
+    padding: 15px 0;
+    font-size: 16px;
+    transition: 0.2s;
+    border-bottom: 1px solid #d9d9d9;
+}
+#select {
+    margin: 0;
+    padding: 0;
+    width: 260px;
+    outline: none;
+    /*text-align: center;*/
+    border: none;
+    font-size: 16px;
+}
+
+/* 当文本框获得焦点的时候 */
+#name:focus{
+    border-bottom: 1px solid #3056d3;
+}
+
+#textarea {
+    resize: none;
+    max-width: 280px;
+    width: 280px;
+    height: 100px;
+    font-size: 20px;
+    border: 1px solid #d9d9d9;
+    margin: 16px 0;
+    outline: none;
+}
+
+.msg-p {
+    font-size: 20px;
+    margin:  0;
+    text-shadow: 3px 3px 12px #6f90ff ;
+}
+
+.msg-h2 {
+    font-size: 35px;
+    margin: 15px 0;
+    text-shadow: 10px 3px 15px #6f90ff;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+
+#submit {
+    width: 45%;
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #13c296;
+    color: white;
+    font-size: 18px;
+    transition:0.3s ;
+    border-radius: 6px;
+}
+
+#submit:hover {
+    background: #16b79c;
+    box-shadow: 0 8px 12px #a8cac3;
+}
+
+#reset {
+    width: 45%;
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #3056d3;
+    font-size: 18px;
+    color: white;
+    border-radius: 6px;
+    transition:0.3s ;
+}
+
+#reset:hover {
+    background: #1b47d9;
+    box-shadow: 0 7px 12px #b4caff;
+}

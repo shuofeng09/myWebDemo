@@ -1,0 +1,74 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background: #eff3f5;
+    padding: 50px 0;
+}
+
+.main-container {
+    max-width: 1050px;
+    width: 1050px;
+    margin: 0 auto;
+    background: white;
+    padding: 0 30px 30px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+
+.content-title {
+    padding: 30px 20px 20px;
+    border-bottom: 1px solid #d5d5d5;
+    position: relative;
+    left: -30px;
+}
+
+.content-title a:hover {
+    transition: 0.5s;
+    color: #0070ca;
+}
+
+.brand {
+    font-size: 15px;
+    color: #6a6a6a;
+}
+
+.content-text {
+    padding: 0 80px;
+}
+code {
+    margin: 2px 0;
+    padding: 2px 4px;
+    font-size: 15px;
+    /*font-weight: bold;*/
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+.tages-box {
+    padding: 0 80px;
+    position: relative;
+    right: -30px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.tages {
+    text-align: right;
+    line-height: 24px;
+    margin: 0;
+}
+
+.tages span {
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 5px;
+}
+
+.tages-footer {
+    text-align: right;
+    font-size: 13px;
+    margin: 5px 0 20px;
+}

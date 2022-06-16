@@ -1,0 +1,114 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-bg {
+    background: url("../../image/bay.jpg") no-repeat center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bg  h1 {
+    font-size: 60px;
+    color: white;
+}
+
+#content-main {
+    max-width: 1050px;
+    width: 1050px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#content-nav {
+    max-width: 350px;
+    display: inline-block;
+    /*box-shadow: 0 10px 8px 6px  #f1f4fe;*/
+}
+
+.content-ul-box {
+
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+
+.content-nav-ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.content-nav-ul li {
+    margin: 0;
+    padding: 0;
+    height: 32px;
+}
+
+.content-nav-ul li:hover {
+    background: #e1e1e1;
+}
+
+.content-nav-ul  a {
+    color: black;
+    height: 32px;
+    /* 控制文本换行 */
+    white-space: nowrap;
+    overflow: hidden;
+    /* 文本溢出处理 */
+    text-overflow: ellipsis;
+    width: 340px;
+    line-height: 32px;
+}
+
+.content-ul-box h2 {
+    text-align: center;
+    color: white;
+    margin: 5px 0;
+    padding: 5px 0;
+    background: #3056d3;
+}
+
+#content-list-news {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 0;
+    width: 700px;
+
+}
+
+.news-list-tips {
+    color: white;
+    background: #3056d3;
+    padding: 2px 5px;
+    margin-right: 7px;
+    font-size: 14px;
+}
+
+.content-list-box {
+    margin-left: 30px;
+   /* border-left: 1px solid silver;*/
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+    padding: 10px 20px 10px 5px;
+}
+
+.content-news-ul {
+    margin: 0;
+    list-style: disc;
+}
+
+.content-news-ul li {
+    height: 40px;
+    border-bottom: 1px solid silver;
+    padding: 10px 0;
+
+}
+
+.content-news-ul a {
+    color: black;
+    height: 40px;
+    line-height: 40px;
+}
